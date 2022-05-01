@@ -1,0 +1,130 @@
+body {
+  background-color: #212F3C;
+}
+
+#google-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-align: center;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  height: 140px;
+  width: 350px;
+  background-image: url(cyberpunk.jpg);
+}
+
+#google-banner-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  height: 140px;
+  width: 350px;
+}
+
+#google-banner-images p {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  color: #F7DC6F;
+  font-size: 25px;
+  padding-top: 80px;
+  padding-right: 10px;
+}
+
+.google-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  top: 20px;
+  height: 92px;
+  width: 272px;
+}
+
+input {
+  border-radius: 25px;
+  background: #212F3C;
+  border-color: #F0F3F4;
+  display: block;
+  color: #F0F3F4;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 500px;
+  height: 40px;
+  border-width: thin;
+}
+
+#search-text {
+  padding-left: 20px;
+}
+
+input:hover {
+  background: #34495E;
+}
+
+input[type=submit] {
+  background: #34495E;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #85929E;
+  font-size: 15px;
+}
+
+#link-container {
+  text-align: right;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.external-link {
+  color: #AED6F1;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.external-link:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+
+#banner-grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 0px;
+  -ms-grid-columns: 250px auto;
+      grid-template-columns: 250px auto;
+  grid-column-gap: 0px;
+}
+
+#banner-grid img {
+  width: 126px;
+  height: 42px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#grid-external-links {
+  text-align: right;
+}
+
+.subtitle {
+  color: #F7DC6F;
+  font-size: 20px;
+  padding-left: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
