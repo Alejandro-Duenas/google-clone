@@ -6,8 +6,16 @@ $secondary-font-color: #F7DC6F;
 $terciary-font-color: #AED6F1;
 $advanced-font-color: crimson;
 
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
 body {
     background-color: $background-color;
+    font-family: Product Sans;
 }
 
 #google-banner {
@@ -52,34 +60,59 @@ body {
 
 }
 
-input {
-    border-radius: 25px;
+%search-text {
     background: $background-color;
     border-color: $highlight-color;
-    display: block;
     color: $highlight-color;
-    font-size: 18px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    border-width: thin;
+
+}
+
+.search-text-big {
+    @extend %search-text;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: 18px;
     margin-top: 20px;
     width: 500px;
     height: 40px;
-    border-width: thin;
+    
 }
-#search-text {
-    padding-left: 20px;
+
+.search-text-small {
+    @extend %search-text;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 250px;
+    height: 20px;
 }
+
 input:hover {
     background: $secondary-color;
 }
 
 input[type=submit] {
     background: $secondary-color;
+    margin-top: 20px;
+    display: block;
     width: 150px;
     height: 30px;
     border-radius: 5px;
+    align-self: center;
     border-color: $secondary-hcolor;
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: thin;
+    color: $highlight-color;
+}
+
+input[type=submit]:hover {
+    background-color: crimson;
 }
 
 #link-container {
@@ -101,9 +134,7 @@ input[type=submit] {
 
 #banner-grid {
     display: grid;
-    padding: 0px;
-    grid-template-columns: 250px auto;
-    grid-column-gap: 0px;
+    grid-template-columns: auto 120px;
 }
 
 #banner-grid img {
@@ -120,9 +151,26 @@ input[type=submit] {
 
 .subtitle {
     color: $secondary-font-color;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 100px;
 }
 
+#introduction-phrase {
+    color: $highlight-color;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 30px;
+}
 
+#input-grid {
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+#input-grid > div {
+    color: $highlight-color;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 

@@ -20,7 +20,31 @@
             </div>
         </div>
         <hr/>
-        <h2>Find pages with...</h2>
+        <p id="introduction-phrase">Find pages with...</p>
+        <form action="https://www.google.com/search">
+            <div id="input-grid">
+                <div>all these words:</div>
+                <div>
+                    <input type="text" class="search-text-small" name="as_q">
+                </div>
+                <div>this exact word or phrase:</div>
+                <div>
+                    <input type="text" class="search-text-small" name="as_epq">
+                </div>
+                <div>any of these words:</div>
+                <div>
+                    <input type="text" class="search-text-small" name="as_oq">
+                </div>
+                <div>none of these words:</div>
+                <div>
+                    <input type="text" class="search-text-small" name="as_eq">
+                </div>
+                <div></div>
+                <div id="final-button">
+                    <input type="submit" value="Google Search">
+                </div>
+            </div>
+        </form>
     </body>
     
 </html>

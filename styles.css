@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+
 body {
   background-color: #212F3C;
+  font-family: Product Sans;
 }
 
 #google-banner {
@@ -53,23 +61,31 @@ body {
   width: 272px;
 }
 
-input {
-  border-radius: 25px;
+.search-text-big, .search-text-small {
   background: #212F3C;
   border-color: #F0F3F4;
-  display: block;
   color: #F0F3F4;
-  font-size: 18px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  width: 500px;
-  height: 40px;
   border-width: thin;
 }
 
-#search-text {
+.search-text-big {
   padding-left: 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 500px;
+  height: 40px;
+}
+
+.search-text-small {
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 250px;
+  height: 20px;
 }
 
 input:hover {
@@ -78,11 +94,24 @@ input:hover {
 
 input[type=submit] {
   background: #34495E;
+  margin-top: 20px;
+  display: block;
   width: 150px;
   height: 30px;
   border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border-color: #85929E;
   font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: thin;
+  color: #F0F3F4;
+}
+
+input[type=submit]:hover {
+  background-color: crimson;
 }
 
 #link-container {
@@ -105,10 +134,8 @@ input[type=submit] {
 #banner-grid {
   display: -ms-grid;
   display: grid;
-  padding: 0px;
-  -ms-grid-columns: 250px auto;
-      grid-template-columns: 250px auto;
-  grid-column-gap: 0px;
+  -ms-grid-columns: auto 120px;
+      grid-template-columns: auto 120px;
 }
 
 #banner-grid img {
@@ -124,7 +151,28 @@ input[type=submit] {
 
 .subtitle {
   color: #F7DC6F;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 100px;
+}
+
+#introduction-phrase {
+  color: #F0F3F4;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+#input-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 300px;
+      grid-template-columns: 200px 300px;
+}
+
+#input-grid > div {
+  color: #F0F3F4;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
