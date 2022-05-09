@@ -10,6 +10,12 @@ body {
   font-family: Product Sans;
 }
 
+table {
+  margin: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 #google-banner {
   display: -webkit-box;
   display: -ms-flexbox;
